@@ -4,7 +4,7 @@ metadata:
   name: wiremock-standalone-argocd-application
   namespace: argocd
 spec:
-  project: OneApp
+  project: default
 
   source:
     repoURL: https://github.com/jesusBB/wiremock-standalone-config.git
@@ -12,7 +12,7 @@ spec:
     path: .
   destination:
     server: https://kubernetes.default.svc
-    namespace: oab
+    namespace: wiremock
 
   syncPolicy:
     syncOptions:
