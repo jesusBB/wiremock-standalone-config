@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wiremock-standalone
+spec:
+  selector:
+    matchLabels:
+      app: wiremock-standalone
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: wiremock-standalone
+    spec:
+      containers:
+      - name: wiremock-standalone
+        image: peeweeto/wiremock-standalone:latest
+        ports:
+        - containerPort: 8089
