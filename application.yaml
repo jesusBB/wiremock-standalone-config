@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: wiremock-standalone-argo-application
+  name: wiremock-standalone-argocd-application
   namespace: argocd
 spec:
   project: default
