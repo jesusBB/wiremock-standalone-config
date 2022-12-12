@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: wiremock-standalone
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels:
@@ -16,4 +16,4 @@ spec:
       - name: wiremock-standalone
         image: peeweeto/wiremock-standalone:latest
         ports:
-        - containerPort: 8089
+        - containerPort: 8080
