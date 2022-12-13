@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: wiremock-standalone
-        image: peeweeto/wiremock-standalone:3.0-SNAPSHOT
+        image: peeweeto/wiremock-standalone:latest
         ports:
         - containerPort: 8080
