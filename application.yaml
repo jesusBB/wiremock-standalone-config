@@ -18,3 +18,4 @@ spec:
     automated:
       selfHeal: true
       prune: true #this will delete the service if the service.yaml file gets deleted
+      allowEmpty: true
