@@ -10,4 +10,4 @@ spec:
     protocol: TCP
     targetPort: 8080
   #  nodePort: 31111
-  #type: NodePort
+  type: NodePort
